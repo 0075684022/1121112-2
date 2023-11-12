@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "過敏", "過敏\過敏.csproj", "{9723B0A4-F58C-4A77-A0B2-280708262258}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9723B0A4-F58C-4A77-A0B2-280708262258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9723B0A4-F58C-4A77-A0B2-280708262258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9723B0A4-F58C-4A77-A0B2-280708262258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9723B0A4-F58C-4A77-A0B2-280708262258}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08BBA833-82A2-4594-A6DA-3AEB36FA74C8}
+	EndGlobalSection
+EndGlobal
