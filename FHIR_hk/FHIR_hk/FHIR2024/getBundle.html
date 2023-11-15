@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title> Get FHIR Resource</title>
-  <script src="setting.js"></script>
+ 	<script src="setting.js"></script>
     <script src="HTTP2024.js"></script>
     <style type="text/css">
         body{width:1024px;font-size:17px;}
@@ -43,12 +43,12 @@
             document.getElementById("fullURL").value = apiURL;
         } */
         function getData() {
-            // var dataString = document.getElementById("fullURL").value;
-            // var apiURL;
-            // apiURL = document.getElementById("fullURL").value;
-            // HTTPGetData(apiURL);
+           /* var dataString = document.getElementById("fullURL").value;
+            var apiURL;
+            apiURL = document.getElementById("fullURL").value;
+            HTTPGetData(apiURL); */
             
-           apiURL ="https://hapi.fhir.org/baseR4/Observation?subject=24957116";
+           apiURL ="http://hapi.fhir.org/baseR4/Patient?organization=35206543";
           // apiURL ="https://hapi.fhir.tw/fhir/Patient";
         
           // HTTPGetData(apiURL); 
@@ -75,26 +75,17 @@ if (bundle.resourceType === "Bundle") {
    // const entry = bundle.entry[i]; 
     thisResource =bundle.entry[i].resource;
     id= thisResource.id;
-   
-    var value2 =  thisResource.valueQuantity.value;
-
+    name =  thisResource.name[0].text;
     output +=  id;
     output += ',';
-    output +=  value2;
+    output +=  name;
     output += '\n';
-
-
     }
     document.getElementById("TextArea1").value = output;  
    }
  
  }  
  
-
-
  </script>
-
-
-
 </body>
 </html>
